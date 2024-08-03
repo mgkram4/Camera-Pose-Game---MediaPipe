@@ -28,8 +28,8 @@ The game currently includes four exercises:
 
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/fitness-game.git
-   cd fitness-game
+   git clone https://github.com/mgkram4/MediaPipe-Camera-Pose-Game.git
+cd MediaPipe-Camera-Pose-Game
    ```
 
 2. Create a virtual environment (optional but recommended):
