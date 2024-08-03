@@ -1,4 +1,3 @@
-# MediaPipe-Camera-Pose-Game
 # Camera-Based Fitness Game
 
 This project is an interactive fitness game that uses your computer's camera and pose detection to guide you through a series of exercises. It's a fun way to stay active and challenge yourself!
@@ -49,7 +48,7 @@ The game currently includes four exercises:
 Run the game by executing the Python script:
 
 ```
-python fitness_game.py
+python main.py
 ```
 
 - The game will access your camera and display the feed with pose detection overlays.
@@ -57,9 +56,17 @@ python fitness_game.py
 - The game will cycle through 10 random exercises.
 - Press 'q' to quit the game at any time.
 
+## How It Works
+
+The game uses MediaPipe's pose detection to track your body's key points. It then analyzes these points to determine if you're performing the requested exercise correctly. The game randomly selects exercises and keeps track of your score as you complete them.
+
 ## Customization
 
-You can easily add new exercises or modify the existing ones by editing the detection functions in the script.
+You can easily add new exercises or modify the existing ones by editing the detection functions in `main.py`. To add a new exercise:
+
+1. Create a new detection function (e.g., `detect_new_exercise(landmarks)`)
+2. Add the new exercise to the `exercises` list
+3. Add a new condition in the main loop to check for the new exercise
 
 ## Contributing
 
